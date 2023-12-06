@@ -19,18 +19,18 @@ type Values struct {
 	CloudCeiling             float64 `json:"cloudCeiling"`
 	CloudCover               int     `json:"cloudCover"`
 	DewPoint                 float64 `json:"dewPoint"`
-	FreezingRainIntensity    int     `json:"freezingRainIntensity"`
+	FreezingRainIntensity    float64 `json:"freezingRainIntensity"`
 	Humidity                 int     `json:"humidity"`
 	PrecipitationProbability int     `json:"precipitationProbability"`
 	PressureSurfaceLevel     float64 `json:"pressureSurfaceLevel"`
 	RainIntensity            int     `json:"rainIntensity"`
 	SleetIntensity           int     `json:"sleetIntensity"`
-	SnowIntensity            int     `json:"snowIntensity"`
+	SnowIntensity            float64 `json:"snowIntensity"`
 	Temperature              float64 `json:"temperature"`
 	TemperatureApparent      float64 `json:"temperatureApparent"`
 	UVHealthConcern          int     `json:"uvHealthConcern"`
 	UVIndex                  int     `json:"uvIndex"`
-	Visibility               int     `json:"visibility"`
+	Visibility               float64 `json:"visibility"`
 	WeatherCode              int     `json:"weatherCode"`
 	WindDirection            float64 `json:"windDirection"`
 	WindGust                 float64 `json:"windGust"`

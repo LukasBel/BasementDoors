@@ -1,0 +1,33 @@
+{
+  "data": {
+    "time": "2023-12-06T17:12:00Z",
+    "values": {
+      "cloudBase": 0.38,
+      "cloudCeiling": 0.38,
+      "cloudCover": 100,
+      "dewPoint": 0.13,
+      "freezingRainIntensity": 0,
+      "humidity": 80,
+      "precipitationProbability": 99,
+      "pressureSurfaceLevel": 1004.03,
+      "rainIntensity": 0,
+      "sleetIntensity": 0,
+      "snowIntensity": 1.98,
+      "temperature": 3,
+      "temperatureApparent": -0.29,
+      "uvHealthConcern": 0,
+      "uvIndex": 0,
+      "visibility": 14.67,
+      "weatherCode": 5000,
+      "windDirection": 340.38,
+      "windGust": 5.31,
+      "windSpeed": 3.5
+    }
+  },
+  "location": {
+    "lat": 39.91969680786133,
+    "lon": -75.49043273925781,
+    "name": "Glen Mills, Thornbury Township, Delaware County, Pennsylvania, 19342, United States",
+    "type": "hamlet"
+  }
+}

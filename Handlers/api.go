@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-func GetData() int {
+func GetData() (int, float64) {
 	url := "https://api.tomorrow.io/v4/weather/realtime?location=glen%20mills&apikey=DcIy5mM8YHNwH94Ow4FsQTLZjKaoMcxo"
 
 	req, _ := http.NewRequest("GET", url, nil)
@@ -24,8 +24,8 @@ func GetData() int {
 	err := json.Unmarshal(body, &weatherResp)
 	if err != nil {
 		log.Fatal("Error decoding JSON", err)
-		return -1
+		return -1, -1
 	}
 
-	return weatherResp.Data.Values.PrecipitationProbability
+	return weatherResp.Data.Values.PrecipitationProbability, weatherResp.Data.Values.SnowIntensity
 }

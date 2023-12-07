@@ -32,10 +32,21 @@ func SendMail(to []string) error {
 }
 
 func Message() []byte {
-	percentage := strconv.Itoa(GetData())
+	var subject, body string
+	p, s := GetData()
 
-	subject := fmt.Sprintf("%v%% chance of rain. ", percentage)
-	body := "Close Basement Door"
+	switch {
+
+	case p >= 50 && s == 0: //raining but not snowing
+		percentage := strconv.Itoa(p)
+		subject = fmt.Sprintf("%v%% chance of rain. ", percentage)
+		body = "Close Basement Door"
+	case p >= 50 && s > 0: //snowing
+		subject = "ITS SNOWING!"
+	default:
+		subject = "Something went wrong..."
+	}
+
 	message := []byte(subject + body)
 	return message
 }

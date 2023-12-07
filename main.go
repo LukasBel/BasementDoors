@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	probability := Handlers.GetData()
+	probability, _ := Handlers.GetData()
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Panic(err)
